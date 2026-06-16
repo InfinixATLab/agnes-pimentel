@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from 'next/image';
 
 type Shot = {
   src: string
@@ -76,10 +77,11 @@ export function PortfolioBook() {
             onClick={() => setActive(i)}
             className={`grain group relative w-full overflow-hidden bg-secondary ${shot.className}`}
           >
-            <img
+            <Image
               src={shot.src || "/placeholder.svg"}
               alt={shot.alt}
               className="h-full w-full object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
+              fill
             />
             <span className="absolute inset-0 bg-foreground/0 transition-colors duration-500 group-hover:bg-foreground/10" />
             <span className="absolute bottom-3 left-3 z-10 font-mono text-[0.6rem] uppercase tracking-[0.2em] text-background opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -109,10 +111,11 @@ export function PortfolioBook() {
             onClick={(e) => e.stopPropagation()}
             className="flex max-h-[88vh] max-w-3xl flex-col items-center"
           >
-            <img
+            <Image
               src={shots[active].src || "/placeholder.svg"}
               alt={shots[active].alt}
               className="max-h-[80vh] w-auto object-contain"
+              fill
             />
             <figcaption className="mt-4 font-mono text-[0.65rem] uppercase tracking-[0.2em] text-background/70">
               {shots[active].tag}

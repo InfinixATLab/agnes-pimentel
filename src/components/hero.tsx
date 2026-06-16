@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden pt-24 md:pt-28">
@@ -35,10 +37,11 @@ export function Hero() {
           {/* Image column */}
           <div className="order-1 md:order-2 md:col-span-5">
             <figure className="grain relative aspect-[3/4] w-full overflow-hidden bg-secondary">
-              <img
+              <Image
                 src="/images/agnes-hero.jpeg"
                 alt="Retrato editorial de Agnes Pimentel usando jaqueta de couro preta"
                 className="h-full w-full object-cover"
+                fill
               />
               <figcaption className="absolute bottom-3 left-3 z-10 font-mono text-[0.6rem] uppercase tracking-[0.2em] text-background/90 mix-blend-difference">
                 FW / 26 — Studio
