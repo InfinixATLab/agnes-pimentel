@@ -1,35 +1,41 @@
 const works = [
   {
     year: "2026",
-    title: "Estação Quente",
-    client: "Vogue Brasil",
-    role: "Editorial de capa",
+    title: "Carnaval 2026",
+    client: "Imperatriz Leopoldinense",
+    role: "Destaque da escola",
   },
   {
     year: "2025",
-    title: "Leather & Light",
-    client: "L'Officiel",
-    role: "Beauty story",
+    title: "Sports Illustrated Swimsuit",
+    client: "Sports Illustrated",
+    role: "Editorial",
   },
   {
     year: "2025",
-    title: "Resort Collection",
-    client: "Farm Rio",
+    title: "International Campaign",
+    client: "PrettyLittleThing",
     role: "Campanha",
   },
   {
-    year: "2024",
-    title: "Alfaiataria Contemporânea",
-    client: "Animale",
-    role: "Lookbook",
+    year: "2025",
+    title: "Fashion Campaign",
+    client: "Polo Club",
+    role: "Campanha",
   },
   {
-    year: "2024",
-    title: "São Paulo Fashion Week",
-    client: "Osklen",
-    role: "Passarela",
+    year: "2025",
+    title: "Fashion Campaign Asos",
+    client: "ASOS",
+    role: "Campanha",
   },
-]
+  {
+    year: "2020",
+    title: "Amor de Mãe",
+    client: "TV Globo",
+    role: "Participação",
+  },
+];
 
 export function Editorials() {
   return (
@@ -43,7 +49,7 @@ export function Editorials() {
             Selected Work
           </h2>
           <p className="max-w-xs font-mono text-xs uppercase tracking-[0.18em] text-background/60">
-            (03) Editoriais, campanhas & passarela
+            Editoriais, campanhas & passarela
           </p>
         </div>
 
@@ -53,16 +59,16 @@ export function Editorials() {
               key={`${w.year}-${w.title}`}
               className="group grid grid-cols-12 items-baseline gap-2 border-b border-background/20 py-6 transition-colors hover:bg-background/5 md:py-8"
             >
-              <span className="col-span-2 font-mono text-xs tracking-widest text-accent md:col-span-1">
+              <span className="col-span-2 font-mono text-xs tracking-widest text-accent md:col-span-1 select-none">
                 {w.year}
               </span>
-              <span className="col-span-10 font-serif text-2xl tracking-tight transition-transform duration-300 group-hover:translate-x-2 md:col-span-6 md:text-4xl">
+              <span className="col-span-10 select-none font-serif text-2xl tracking-tight transition-transform duration-300 group-hover:translate-x-2 md:col-span-6 md:text-4xl">
                 {w.title}
               </span>
-              <span className="col-span-7 col-start-3 text-sm text-background/70 md:col-span-3 md:col-start-auto md:text-right">
+              <span className="col-span-7 select-none col-start-3 text-sm text-background/70 md:col-span-3 md:col-start-auto md:text-right">
                 {w.client}
               </span>
-              <span className="col-span-3 text-right font-mono text-[0.65rem] uppercase tracking-[0.18em] text-background/50 md:col-span-2">
+              <span className="col-span-3 select-none text-right font-mono text-[0.65rem] uppercase tracking-[0.18em] text-background/50 md:col-span-2">
                 {w.role}
               </span>
             </li>

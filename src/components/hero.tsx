@@ -6,7 +6,7 @@ export function Hero() {
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
         {/* Top meta row */}
         <div className="flex items-end justify-between border-b border-foreground/15 pb-4 text-[0.65rem] uppercase tracking-[0.25em] text-muted-foreground">
-          <span>Based in São Paulo</span>
+          <span>Based in Rio de Janeiro</span>
           <span className="hidden sm:block">Womenswear · Beauty · Runway</span>
           <span>Est. 2019</span>
         </div>
@@ -15,7 +15,7 @@ export function Hero() {
           {/* Type column */}
           <div className="order-2 md:order-1 md:col-span-7">
             <p className="mb-4 max-w-md font-sans text-sm leading-relaxed text-muted-foreground md:mb-6">
-              <span className="text-accent">(01)</span> Modelo brasileira
+              <span className="font-bold">Modelo</span> brasileira
               trabalhando entre editorial, passarela e campanhas de beleza.
               Presença calorosa, versátil e fotogênica.
             </p>
@@ -26,17 +26,17 @@ export function Hero() {
             </h1>
 
             <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 font-mono text-xs uppercase tracking-widest text-muted-foreground md:mt-12">
-              <span>Alt 178 cm</span>
+              <span>Alt 176 cm</span>
               <span className="h-3 w-px bg-foreground/20" />
-              <span>Cabelo Castanho</span>
+              <span>Cabelo Castanho Claro</span>
               <span className="h-3 w-px bg-foreground/20" />
-              <span>Olhos Castanhos</span>
+              <span>Olhos Verdes</span>
             </div>
           </div>
 
           {/* Image column */}
           <div className="order-1 md:order-2 md:col-span-5">
-            <figure className="grain relative aspect-[3/4] w-full overflow-hidden bg-secondary">
+            <figure className="grain relative aspect-3/4 w-full overflow-hidden bg-secondary">
               <Image
                 src="/images/agnes-hero.jpeg"
                 alt="Retrato editorial de Agnes Pimentel usando jaqueta de couro preta"

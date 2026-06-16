@@ -31,6 +31,7 @@ export function SiteHeader() {
         <a
           href="#top"
           className="font-serif text-lg leading-none tracking-tight md:text-xl"
+          tabIndex={-1}
         >
           Agnes Pimentel
         </a>
@@ -48,7 +49,7 @@ export function SiteHeader() {
           ))}
           <a
             href="#contato"
-            className="rounded-full border border-foreground/30 px-4 py-1.5 text-xs uppercase tracking-[0.18em] transition-colors hover:border-accent hover:text-accent"
+            className="rounded-full border border-foreground/30 px-4 py-1.5 text-xs uppercase tracking-[0.18em] transition-colors hover:border-white hover:text-black hover:bg-white"
           >
             Booking
           </a>
@@ -63,7 +64,7 @@ export function SiteHeader() {
         >
           <span
             className={`h-px w-7 bg-foreground transition-transform duration-300 ${
-              open ? "translate-y-[7px] rotate-45" : ""
+              open ? "translate-y-1.75 rotate-45" : ""
             }`}
           />
           <span
@@ -73,7 +74,7 @@ export function SiteHeader() {
           />
           <span
             className={`h-px w-7 bg-foreground transition-transform duration-300 ${
-              open ? "-translate-y-[7px] -rotate-45" : ""
+              open ? "-translate-y-1.75 -rotate-45" : ""
             }`}
           />
         </button>

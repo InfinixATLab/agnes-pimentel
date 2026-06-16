@@ -1,12 +1,7 @@
 const agencies = [
-  "Vogue Brasil",
-  "Elle",
-  "Harper's Bazaar",
-  "Osklen",
-  "Animale",
-  "Farm Rio",
-  "L'Officiel",
-  "Reserva",
+  "Mix Models Agency",
+  "Leni's Model Management",
+  "Next Miami",
 ]
 
 export function Marquee() {
@@ -19,7 +14,7 @@ export function Marquee() {
       <div className="flex overflow-hidden">
         <div className="flex shrink-0 animate-marquee items-center whitespace-nowrap">
           {items.map((name, i) => (
-            <span key={i} className="flex items-center">
+            <span key={i} className="flex items-center py-2">
               <span className="px-8 font-serif text-2xl italic md:text-4xl">
                 {name}
               </span>
