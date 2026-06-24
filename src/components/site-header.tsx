@@ -4,9 +4,8 @@ import { useEffect, useState } from "react"
 
 const links = [
   { href: "#book", label: "Book" },
-  { href: "#editoriais", label: "Editoriais" },
-  { href: "#medidas", label: "Medidas" },
   { href: "#sobre", label: "Sobre" },
+  { href: "#editoriais", label: "Trabalhos" },
   { href: "#contato", label: "Contato" },
 ]
 
@@ -23,9 +22,8 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
-        scrolled ? "bg-background/85 backdrop-blur-md" : "bg-transparent"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${scrolled ? "bg-background/85 backdrop-blur-md" : "bg-transparent"
+        }`}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-4 md:px-10 md:py-6">
         <a
@@ -63,28 +61,24 @@ export function SiteHeader() {
           className="flex flex-col gap-1.5 md:hidden"
         >
           <span
-            className={`h-px w-7 bg-foreground transition-transform duration-300 ${
-              open ? "translate-y-1.75 rotate-45" : ""
-            }`}
+            className={`h-px w-7 bg-foreground transition-transform duration-300 ${open ? "translate-y-1.75 rotate-45" : ""
+              }`}
           />
           <span
-            className={`h-px w-7 bg-foreground transition-opacity duration-300 ${
-              open ? "opacity-0" : ""
-            }`}
+            className={`h-px w-7 bg-foreground transition-opacity duration-300 ${open ? "opacity-0" : ""
+              }`}
           />
           <span
-            className={`h-px w-7 bg-foreground transition-transform duration-300 ${
-              open ? "-translate-y-1.75 -rotate-45" : ""
-            }`}
+            className={`h-px w-7 bg-foreground transition-transform duration-300 ${open ? "-translate-y-1.75 -rotate-45" : ""
+              }`}
           />
         </button>
       </div>
 
       {/* Mobile drawer */}
       <div
-        className={`overflow-hidden border-b border-border bg-background transition-[max-height] duration-500 ease-in-out md:hidden ${
-          open ? "max-h-96" : "max-h-0"
-        }`}
+        className={`overflow-hidden border-b border-border bg-background transition-[max-height] duration-500 ease-in-out md:hidden ${open ? "max-h-96" : "max-h-0"
+          }`}
       >
         <nav className="flex flex-col px-5 py-2">
           {links.map((l) => (

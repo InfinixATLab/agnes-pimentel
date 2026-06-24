@@ -1,40 +1,70 @@
 const works = [
   {
     year: "2026",
-    title: "Carnaval 2026",
-    client: "Imperatriz Leopoldinense",
-    role: "Destaque da escola",
+    title: "Campanha Shein",
+    client: "SHEIN UK",
+    role: "Modelo",
   },
   {
-    year: "2025",
-    title: "Sports Illustrated Swimsuit",
-    client: "Sports Illustrated",
-    role: "Editorial",
+    year: "2024",
+    title: "Campanha Shein LA",
+    client: "SHEIN",
+    role: "Modelo",
   },
   {
-    year: "2025",
-    title: "International Campaign",
-    client: "PrettyLittleThing",
-    role: "Campanha",
+    year: "2023-2024",
+    title: "Campanha Los Angeles",
+    client: "Fashion Nova",
+    role: "Modelo",
   },
   {
-    year: "2025",
-    title: "Fashion Campaign",
-    client: "Polo Club",
-    role: "Campanha",
+    year: "2022",
+    title: "London Fashion Week",
+    client: "",
+    role: "Modelo",
   },
   {
-    year: "2025",
-    title: "Fashion Campaign Asos",
-    client: "ASOS",
-    role: "Campanha",
+    year: "2020-2022",
+    title: "Campanha Dercos Vichy",
+    client: "L'Oréal Paris",
+    role: "Modelo",
   },
   {
-    year: "2020",
+    year: "2016",
     title: "Amor de Mãe",
     client: "TV Globo",
     role: "Participação",
   },
+  {
+    year: "2019",
+    title: "New York Fashion Week",
+    client: "",
+    role: "Modelo",
+  },
+  {
+    year: "2018-2023",
+    title: "Campanha Pretty Little Thing UK",
+    client: "PLT",
+    role: "Modelo",
+  },
+  {
+    year: "2016",
+    title: "Sports Illustrated Swimsuit - Miami & New York Editions",
+    client: "Sports Illustrated",
+    role: "Modelo",
+  },
+  {
+    year: "2015-2018",
+    title: "E-commerce & Fashion Campaigns",
+    client: "ASOS UK",
+    role: "Modelo",
+  },
+  {
+    year: "2015",
+    title: "Fashion Campaign",
+    client: "Polo Club Italia",
+    role: "Modelo",
+  }
 ];
 
 export function Editorials() {
@@ -46,7 +76,7 @@ export function Editorials() {
       <div className="mx-auto max-w-[1600px] px-5 md:px-10">
         <div className="mb-10 flex flex-col justify-between gap-4 border-b border-background/20 pb-5 md:mb-16 md:flex-row md:items-end">
           <h2 className="font-serif text-5xl font-light tracking-tight md:text-7xl">
-            Selected Work
+            Trabalhos
           </h2>
           <p className="max-w-xs font-mono text-xs uppercase tracking-[0.18em] text-background/60">
             Editoriais, campanhas & passarela

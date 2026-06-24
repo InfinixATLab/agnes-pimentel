@@ -7,39 +7,87 @@ type Shot = {
   src: string
   alt: string
   tag: string
+  blur: string
   className: string
 }
 
 const shots: Shot[] = [
   {
-    src: "/images/editorial-full.png",
-    alt: "Editorial de corpo inteiro com casaco bege",
-    tag: "Editorial — Bone",
-    className: "md:col-span-5 md:row-span-2 aspect-[3/4]",
+    src: "/images/agnes-001.jpeg",
+    alt: "Agnes de vestido branco longo casual apoiada em uma moto Vespa vermelha clássica",
+    tag: "",
+    blur: "/images/agnesb-001.jpeg",
+    className: "md:col-span-4 aspect-[3/4]",
   },
   {
     src: "/images/agnes-hero.jpeg",
-    alt: "Retrato de Agnes Pimentel com jaqueta de couro",
-    tag: "Beauty — Studio",
+    alt: "Agnes é uma mulher de pele parda clara, rosto simétrico com traços marcantes, olhos castanhos expressivos e lábios carnudos com brilho natural. Seu cabelo é longo, ondulado, castanho com mechas douradas bem evidentes emoldurando o rosto. Ela posa olhando para a frente vestindo uma jaqueta de couro preta",
+    tag: "",
+    blur: "/images/agnesb-hero.png",
     className: "md:col-span-4 aspect-[4/5]",
   },
   {
-    src: "/images/editorial-bw.png",
-    alt: "Retrato editorial em preto e branco",
-    tag: "P&B — Profile",
+    src: "/images/agnes-002.jpeg",
+    alt: "Agnes usando vestido curto prata de malha de metal com decote profundo e gargantilha",
+    tag: "",
+    blur: "/images/agnesb-002.jpeg",
+    className: "md:col-span-4 aspect-[3/4]",
+  },
+  {
+    src: "/images/agnes-003.jpeg",
+    alt: "Editorial de estúdio com blazer pretoelo de vestido de cetim verde menta floral posando contra fundo amarelo",
+    tag: "Tailoring — Taupe",
+    blur: "/images/agnesb-003.jpeg",
     className: "md:col-span-3 aspect-[3/4]",
   },
   {
-    src: "/images/editorial-studio.png",
-    alt: "Editorial de estúdio com blazer preto",
-    tag: "Tailoring — Taupe",
-    className: "md:col-span-4 aspect-[4/5]",
-  },
-  {
-    src: "/images/editorial-outdoor.png",
+    src: "/images/agnes-004.jpeg",
     alt: "Editorial externo durante o golden hour",
     tag: "Outdoor — Golden",
+    blur: "/images/agnesb-004.jpeg",
+    className: "md:col-span-6 aspect-[3/4]",
+  },
+  {
+    src: "/images/agnes-005.jpeg",
+    alt: "Agnes de top de strass brilhante e shorts preto posando com tambores de escola de samba",
+    tag: "",
+    blur: "/images/agnesb-005.jpeg",
     className: "md:col-span-3 aspect-[3/4]",
+  },
+  {
+    src: "/images/agnes-006.jpeg",
+    alt: "Agnes usando conjunto de lingerie branca com cropped de manga curta e calcinha hot pants de cós largo",
+    tag: "",
+    blur: "/images/agnesb-006.jpeg",
+    className: "md:col-span-5 aspect-[4/5]",
+  },
+  {
+    src: "/images/agnes-007.jpeg",
+    alt: "Foto em preto e branco de modelo usando chapéu bucket hat preto estampado com flores",
+    tag: "",
+    blur: "/images/agnesb-007.jpeg",
+    className: "md:col-span-7 aspect-[3/4]",
+  },
+  {
+    src: "/images/agnes-008.jpeg",
+    alt: "Close de rosto de Agnes com maquiagem natural em tons bronze, lábios com gloss e sobrancelhas bem delineadas",
+    tag: "",
+    blur: "/images/agnesb-008.jpeg",
+    className: "md:col-span-4 aspect-[3/4]",
+  },
+  {
+    src: "/images/agnes-009.jpeg",
+    alt: "Agnes usando vestido rosa brilhante com saia de plumas segurando um globo de espelhos de discoteca",
+    tag: "",
+    blur: "/images/agnesb-009.jpeg",
+    className: "md:col-span-4 aspect-[3/4]",
+  },
+  {
+    src: "/images/agnes-010.jpeg",
+    alt: "Agnes vestindo look total jeans com colete cropped de botões e calça reta com lavagem clara",
+    tag: "",
+    blur: "/images/agnesb-010.jpeg",
+    className: "md:col-span-4 aspect-[3/4]",
   },
 ]
 
@@ -128,7 +176,7 @@ export function PortfolioBook() {
             >
               <span className="sr-only">Fechar</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 1L1 13M1 1L13 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M13 1L1 13M1 1L13 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
           </div>
@@ -142,7 +190,7 @@ export function PortfolioBook() {
             className="absolute left-2 top-1/2 z-110 -translate-y-1/2 p-4 text-white/40 transition-colors hover:text-white md:left-8 cursor-pointer"
             aria-label="Imagem anterior"
           >
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6" /></svg>
           </button>
 
           {/* Nav: Next */}
@@ -154,7 +202,7 @@ export function PortfolioBook() {
             className="absolute right-2 top-1/2 z-110 -translate-y-1/2 p-4 text-white/40 transition-colors hover:text-white md:right-8 cursor-pointer"
             aria-label="Próxima imagem"
           >
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
           </button>
 
           {/* Image Figure */}
@@ -169,6 +217,8 @@ export function PortfolioBook() {
                 alt={shots[active].alt}
                 className="object-contain"
                 quality={100}
+                placeholder="blur"
+                blurDataURL=""
                 priority
                 fill
               />
