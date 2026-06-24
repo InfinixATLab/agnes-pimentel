@@ -23,7 +23,7 @@ export function About() {
       </div>
 
       <p className="font-serif text-3xl font-light leading-1.25 tracking-tight md:text-5xl md:leading-[1.2]">
-        Da <span className="italic text-yellow-100">passarela</span> à avenida.
+        Da passarela à avenida.
       </p>
 
       <div className="mt-10 space-y-4 text-base leading-relaxed text-muted-foreground">
